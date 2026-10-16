@@ -1,0 +1,106 @@
+:root {
+    --yellow-pastel:     #F9E7A8;
+    --green-pastel:      #B7DDBB;
+    --purple-pastel:     #D8C2F0;
+    --blue-pastel:       #B8D8F0;
+    --orange-pastel:     #FFC99F;
+    --beige-pastel:      #E8DCCB;
+    --yellow-text:       #67551F;
+    --green-text:        #294B32;
+    --purple-text:       #503B70;
+    --blue-text:         #294B68;
+    --orange-text:       #704326;
+    --beige-text:        #5E4936;
+    --cream-white:       #FFFCF5;
+    --main-text:         #51465D;
+    --gold:               ;
+
+    --font-head:  "space Grotesk",  "Segoe UI",  Arial, sans-serif;
+    --font-body:  "Source Sans 3", "Segoe UI", Ariel, sans-serif;
+    --max-width: 1100px;
+    --header-height: 70px;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    color: var(--main-text);
+    background-color: var(--paper);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+}
+
+
+h1, h2, h3 {
+    font-family: var(--font-head);
+    line-height: 1.2;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-head);
+    line-height: 1.2;
+}
+
+a {
+    color: var(--river);
+}
+
+a:focus-visible {
+    outline: 3px solid var(--);
+    outline-offset: 3px; 
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+/* Navigation bar background */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: var(--green-pastel);
+  box-sizing: border-box;
+}
+
+.nav-bar {
+    width: 100%;
+    background-color: var(--green-pastel);
+    box-sizing: border-box;
+}
+
+/* Space the names evenly across the bar */
+.nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Make only each name clickable */
+.nav-bar a {
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+    color: var(--green-text);
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Highlight only the name being hovered over */
+.nav-bar a:hover {
+    background-color: #E8F5E9;
+}
+
+/* Keyboard accessibility */
+.nav-bar a:focus-visible {
+    outline: 3px solid var(--green-text);
+    outline-offset: 3px;
+}
