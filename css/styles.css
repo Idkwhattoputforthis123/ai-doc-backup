@@ -72,6 +72,7 @@ nav {
     width: 100%;
     background-color: var(--green-pastel);
     box-sizing: border-box;
+    border-radius: 12px;
 }
 
 /* Space the names evenly across the bar */
@@ -103,4 +104,199 @@ nav {
 .nav-bar a:focus-visible {
     outline: 3px solid var(--green-text);
     outline-offset: 3px;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card {
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#sam {
+    background-color: var(--yellow-pastel);
+}
+
+#jason {
+    background-color: var(--purple-pastel);
+}
+
+#emily {
+    background-color: var(--blue-pastel);
+}
+
+#karen {
+    background-color: var(--orange-pastel);
+}
+
+#rocky {
+    background-color: var(--beige-pastel);
+}
+
+#sam h2, #sam p {
+    color: var(--yellow-text);
+}
+
+#jason h2, #jason p {
+    color: var(--purple-text);
+}
+
+#emily h2, #emily p {
+    color: var(--blue-text);
+}
+
+#karen h2, #karen p {
+    color: var(--orange-text);
+}
+
+#rocky h2, #rocky p {
+    color: var(--beige-text);
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(81, 70, 93, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(81, 70, 93, 0.18);
+}
+
+
+.card h2 {
+    font-size: 1.25rem;
+    padding: 0 14px;
+    margin: 12px 0 6px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0 14px 14px;
+    margin: 0;
+}
+
+.card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Keep images at 400 × 400 */
+.card .img-card {
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.summary {
+    grid-column: 1 / -1;
+    background-color: var(--cream-white);
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.summary h2 {
+    color: var(--main-text);
+    margin-top: 0;
+}
+
+/* Facts table section */
+.facts {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow-x: auto;
+}
+
+/* Table layout */
+.facts table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: separate;
+    border-spacing: 8px;
+    table-layout: fixed;
+    background-color: transparent;
+}
+
+/* Table headings */
+.facts th {
+    padding: 16px 12px;
+    text-align: center;
+    font-family: var(--font-head);
+    color: var(--main-text);
+    border-radius: 10px;
+}
+
+/* Table cells */
+.facts td {
+    padding: 16px;
+    vertical-align: top;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    border-radius: 10px;
+}
+
+.facts th:nth-child(1),
+.facts td:nth-child(1) {
+    background-color: var(--yellow-pastel);
+    color: var(--yellow-text);
+}
+
+.facts th:nth-child(2),
+.facts td:nth-child(2) {
+    background-color: var(--purple-pastel);
+    color: var(--purple-text);
+}
+
+.facts th:nth-child(3),
+.facts td:nth-child(3) {
+    background-color: var(--blue-pastel);
+    color: var(--blue-text);
+}
+
+.facts th:nth-child(4),
+.facts td:nth-child(4) {
+    background-color: var(--orange-pastel);
+    color: var(--orange-text);
+}
+
+.facts th:nth-child(5),
+.facts td:nth-child(5) {
+    background-color: var(--beige-pastel);
+    color: var(--beige-text);
+}
+
+/* Table title */
+.facts caption {
+    caption-side: top;
+    text-align: left;
+    font-family: var(--font-head);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--main-text);
+    padding: 0 8px 16px;
 }
