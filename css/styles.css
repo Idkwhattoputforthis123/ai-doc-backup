@@ -223,6 +223,7 @@ main {
     margin-top: 0;
 }
 
+
 /* Facts table section */
 .facts {
     grid-column: 1 / -1;
@@ -236,8 +237,8 @@ main {
 .facts table {
     width: 100%;
     min-width: 700px;
-    border-collapse: separate;
-    border-spacing: 8px;
+    border-collapse: collapse;
+    border-spacing: 0;
     table-layout: fixed;
     background-color: transparent;
 }
@@ -247,8 +248,9 @@ main {
     padding: 16px 12px;
     text-align: center;
     font-family: var(--font-head);
-    color: var(--main-text);
-    border-radius: 10px;
+    vertical-align: middle;
+    border: 2px solid var(--cream-white);
+    box-sizing: border-box;
 }
 
 /* Table cells */
@@ -257,9 +259,9 @@ main {
     vertical-align: top;
     line-height: 1.5;
     font-size: 0.95rem;
-    border-radius: 10px;
+    border: 2px solid var(--cream-white);
+    box-sizing: border-box;
 }
-
 .facts th:nth-child(1),
 .facts td:nth-child(1) {
     background-color: var(--yellow-pastel);
@@ -299,4 +301,9 @@ main {
     font-weight: bold;
     color: var(--main-text);
     padding: 0 8px 16px;
+}
+
+.facts th,
+.facts td {
+    width: 20%;
 }
